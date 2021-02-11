@@ -40,7 +40,7 @@ class Order(models.Model):
         blank=False)
     postcode = models.CharField(
         max_length=20,
-        null=False,
+        null=True,
         blank=True)
     town_or_city = models.CharField(
         max_length=40,
@@ -52,7 +52,7 @@ class Order(models.Model):
         blank=False)
     street_address2 = models.CharField(
         max_length=80,
-        null=False,
+        null=True,
         blank=True)
     county = models.CharField(
         max_length=80,
